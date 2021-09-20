@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'statics#home'
   get '/food', to: 'foods#index'
   get '/git', to: 'git_info#index'
+  get '/services', to: 'ping#index'
 end
