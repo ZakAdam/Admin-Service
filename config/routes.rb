@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/food', to: 'foods#index'
   get '/git', to: 'git_info#index'
   get '/services', to: 'ping#index'
+  get '/upload', to: 'posts#index'
+  post '/upload', to: 'posts#create'
 end
