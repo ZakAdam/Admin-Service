@@ -8,6 +8,8 @@ class PostsController < ApplicationController
     puts params
     puts params[:file].class
     uploader = FileUploader.new
-    uploader.store!(params[:file])
+    if uploader.store!(params[:file])
+      redirect_to root_path, notice: 'File successfully uploaded!'
+    end
   end
 end
