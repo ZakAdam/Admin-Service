@@ -8,6 +8,9 @@
 !.env.example
 .env
 
+public/uploads
+public/files
+
 # Ignore bundler config.
 /.bundle
 
